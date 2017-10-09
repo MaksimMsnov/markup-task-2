@@ -62,7 +62,8 @@
                         this.timings['look-ma-finish'] = Date.now();
                     </code>
                 </p>
-                <p>C помощью <code>Date.now()</code>мы получаем текущее время. Все тайминги собираются и при<br>
+                <p>
+                C помощью<code>Date.now()</code>мы получаем текущее время. Все тайминги собираются и при<br>
                 отправке рассчитываются. На этапах разница между “end” и “start” не считается,<br>
                 а все вычисления производятся в конце:<br>
                 <code>
@@ -133,7 +134,7 @@
                 </table>
                 <p>После того как мы определились с библиотекой для диффа, нужно определиться с тем,
                 где и как хранить статику на клиенте.</p>
-                <p>Формат файла с патчами для проекта выглядит так:<br>
+                <p>Формат файла с патчами для проекта выглядит так:<p>
                 <pre><code>
                 [
                     {
@@ -158,19 +159,19 @@
                 нахождения локального максимума/минимума нелинейного функционала<br>
                 без ограничений.</p>
                 <blockquote>
-                    дано:<em>&epsilon;, x<sub>0</sub></em><br>
-                    инициализировать <dfn>H<sub>0</sub></dfn><br>
-                    <dfn>k</dfn>=0<br>
-                    <strong>while</strong>|| &nabla;<em>f<sub>k</sub></em>|| &gt; &epsilon;<br>
-                    &emsp;найти направление <dfn>p<sub>k</sub> = -C <sub>k</sub>&nabla; f<sub>k</sub></dfn><br>
-                    &emsp;вычислить <dfn>x<sub>k+1</sub> = x<sub>
-                    k</sub> + &alpha; <sub>k</sub>p<sub>k</sub>, &alpha; <sub>
-                    k</sub></dfn> удовлетворяет условиям Вольфе<br>
-                    &emsp;обозначить <dfn>s<sub>k</sub> = x<sub>k+1</sub>-x<sub>k</sub>
-                        и y<sub>k</sub> = &nabla; f<sub>k+1</sub> - &nabla; f<sub>k</sub></dfn><br>
-                    &emsp;вычислить <dfn>C<sub>k+1</sub></dfn><br>
-                    &emsp;<dfn>k=k+1</dfn><br>
-                    <strong>end</strong>
+                дано:<em>&epsilon;, x<sub>0</sub></em><br>
+                инициализировать <dfn>H<sub>0</sub></dfn><br>
+                <dfn>k</dfn>=0<br>
+                <strong>while</strong>|| &nabla;<em>f<sub>k</sub></em>|| &gt; &epsilon;<br>
+                &emsp;найти направление <dfn>p<sub>k</sub> = -C <sub>k</sub>&nabla; f<sub>k</sub></dfn><br>
+                &emsp;вычислить <dfn>x<sub>k+1</sub> = x<sub>
+                k</sub> + &alpha; <sub>k</sub>p<sub>k</sub>, &alpha; <sub>
+                k</sub></dfn> удовлетворяет условиям Вольфе<br>
+                &emsp;обозначить <dfn>s<sub>k</sub> = x<sub>k+1</sub>-x<sub>k</sub>
+                    и y<sub>k</sub> = &nabla; f<sub>k+1</sub> - &nabla; f<sub>k</sub></dfn><br>
+                &emsp;вычислить <dfn>C<sub>k+1</sub></dfn><br>
+                &emsp;<dfn>k=k+1</dfn><br>
+                <strong>end</strong>
                 </blockquote>
                 <p>Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:<br>
                 CRC16/32 - алгоритм нахождения контрольной суммы, предназначенный для проверки<br>
